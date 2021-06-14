@@ -1,3 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html, body {
+  font-size: 16px;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+body {
+  background: url(./images/bg-intro-mobile.png) no-repeat center #ff7a7a;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+header, main, footer {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0 auto 1.5rem;
+  font-size: 1.7rem;
+}
+header h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main aside, main form {
+  border-radius: 0.75rem;
+  box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+main aside {
+  background-color: #6055a5;
+  padding: 0.2rem 3rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+main aside p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+main aside p strong {
+  font-weight: 600;
+}
+main form {
+  background-color: #FFF;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+main form input, main form button {
+  display: block;
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+main form input {
+  border: 1px solid #b9b6d3;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+main form input:focus {
+  outline: none;
+  border-color: #000;
+}
+main form button {
+  border: 1px solid #38cc8c;
+  background-color: #38cc8c;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 2px rgba(89, 166, 133, 0.9);
+  cursor: pointer;
+}
+main form button:active {
+  opacity: 0.5;
+}
+main form p {
+  width: 90%;
+  margin: 1rem auto 0;
+  color: #b9b6d3;
+  font-size: 11px;
+  text-align: center;
+}
+main form p a {
+  color: #ff7a7a;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
