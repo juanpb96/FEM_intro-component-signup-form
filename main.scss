@@ -71,6 +71,20 @@ main {
         align-items: center;
         box-sizing: border-box;
 
+        .input-container {
+            width: 100%;
+            box-sizing: inherit;
+            position: relative;
+
+            &.error--active::before {
+                content: url(images/icon-error.svg);
+                width: 1.5rem;
+                position: absolute;
+                top: calc(#{$input-height} / 2 - 1.5rem / 2);
+                right: 1rem;
+            }
+        }
+
         input, button {
             display: block;
             width: 100%;
@@ -81,6 +95,7 @@ main {
         }
 
         input {
+            height: $input-height;
             border: 1px solid $grayish-blue;
             margin-bottom: 1rem;
             font-size: 0.875rem;
@@ -89,6 +104,23 @@ main {
             &:focus {
                 outline: none;
                 border-color: #000;
+            }
+
+            &.error--active {
+                border: 2px solid $red;
+                margin-bottom: 0;
+            }
+        }
+
+        p.error {
+            display: none;
+
+            &--active {
+                display: block;
+                color: $red;
+                text-align: right;
+                font-style: italic;
+                margin: 0.3rem 0 1rem;
             }
         }
 
@@ -104,6 +136,7 @@ main {
             cursor: pointer;
 
             &:active {
+                box-shadow: none;
                 opacity: 0.5;
             }
         }
