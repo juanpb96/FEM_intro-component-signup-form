@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -26,10 +27,22 @@
       </aside>
   
       <form>
-        <input type="text" name="first-name" id="first-name" aria-label="First name" placeholder="First Name">
-        <input type="text" name="last-name" id="last-name" aria-label="Last name" placeholder="Last Name">
-        <input type="email" name="email" id="email" aria-label="Email address" placeholder="Email Address">
-        <input type="password" name="password" id="password" aria-label="Password" placeholder="Password">
+        <div class="input-container">
+          <input type="text" name="first-name" id="first-name" aria-label="First name" placeholder="First Name">
+          <p class="error error__first-name"></p>
+        </div>
+        <div class="input-container">
+          <input type="text" name="last-name" id="last-name" aria-label="Last name" placeholder="Last Name">
+          <p class="error error__last-name"></p>
+        </div>
+        <div class="input-container">
+          <input type="email" name="email" id="email" aria-label="Email address" placeholder="Email Address">
+          <p class="error error__email"></p>
+        </div>
+        <div class="input-container">
+          <input type="password" name="password" id="password" aria-label="Password" placeholder="Password">
+          <p class="error error__password"></p>
+        </div>
         <button type="submit">Claim your free trial</button>
         <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
