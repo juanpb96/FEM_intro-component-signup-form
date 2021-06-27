@@ -105,7 +105,7 @@ main form p.error--active {
   color: #ff7a7a;
   text-align: right;
   font-style: italic;
-  margin: 0.3rem 0 1rem;
+  margin: 0.3rem 0.2rem 1rem auto;
 }
 main form button {
   border: 1px solid #38cc8c;
