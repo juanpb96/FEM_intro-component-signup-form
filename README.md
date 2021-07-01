@@ -31,7 +31,7 @@ Users should be able to:
 
 Desktop view
 
-![Solution preview](./design/Screenshot_intro-component-signup-form-preview.png)
+![Solution preview](./design/Screenshot_intro-component-signup-form-preview.PNG)
 
 ### Links
 
